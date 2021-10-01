@@ -2,8 +2,16 @@ import { useState, useEffect } from "react";
 import "../styles/Repositories.css";
 import { RepositoriesItems } from "./RepositoriesItems";
 
+//
+interface index {
+  name: string;
+  description: string;
+  html_url: string;
+}
+
 export const RopositoriesList = () => {
-  const [itens, setItens] = useState([]);
+  // syntax stating that prosp has more data
+  const [itens, setItens] = useState<index[]>([]);
   //getting data of the API
   useEffect(() => {
     fetch("https://api.github.com/orgs/rocketseat/repos")
@@ -16,7 +24,7 @@ export const RopositoriesList = () => {
       <ul>
         {/* listing API dates and rendering*/}
         {itens.map((index) => {
-          return <RepositoriesItems  index={index} />;
+          return <RepositoriesItems key={index.name} index={index} />;
         })}
       </ul>
     </section>

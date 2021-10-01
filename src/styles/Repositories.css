@@ -5,6 +5,16 @@
   padding: 32px;
 }
 
+.container {
+  border: rgb(187, 182, 182) solid 1px;
+}
+
+ul {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 h1 {
   display: inline-block;
   margin-bottom: 20px;
@@ -16,12 +26,13 @@ h1 {
 h2 {
   font: 400 22px "Roboto", "Ubuntu", sans-serif;
   color: rgb(99, 99, 99);
-  line-height: 26px;
+  line-height: 20px;
+  margin-bottom: 5px;
 }
 
 p {
   font: 400 16px "Roboto", "Ubuntu", sans-serif;
-  line-height: 26px;
+  line-height: 20px;
 }
 
 a {
@@ -29,6 +40,10 @@ a {
   text-decoration: none;
   color: rgb(163, 13, 163);
   line-height: 22px;
+}
+
+li {
+  padding: 10px;
 }
 li:nth-last-child(n) {
   margin-bottom: 32px;
