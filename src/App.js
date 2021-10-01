@@ -1,12 +1,11 @@
-import './App.css';
-import { Reposiories } from './components/List-repositories';
+import { RopositoriesList } from './components/Rositories';
+import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      
-     <Reposiories />
-    </div>
+    <>
+     <RopositoriesList />
+    </>
   );
 }
 

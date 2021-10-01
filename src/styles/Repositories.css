@@ -1,0 +1,30 @@
+.wrapper-list {
+  margin: 32px;
+  width: 100%;
+}
+
+h1 {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #3b3b3b;
+  font: 500 32px "Roboto", "Ubuntu", sans-serif;
+  line-height: 32px;
+}
+
+h2 {
+  font: 400 22px "Roboto", "Ubuntu", sans-serif;
+  color: rgb(99, 99, 99);
+  line-height: 26px;
+}
+
+p {
+  font: 400 16px "Roboto", "Ubuntu", sans-serif;
+  line-height: 22px;
+}
+
+a{
+    text-decoration: none;
+}
+li:nth-last-child(n){
+margin-bottom: 32px;
+}
