@@ -1,6 +1,8 @@
 .wrapper-list {
-  margin: 32px;
-  width: 100%;
+  max-width: 1600px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 32px;
 }
 
 h1 {
