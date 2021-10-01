@@ -1,5 +1,4 @@
 import { RopositoriesList } from './components/Rositories';
-import './styles/App.css';
 
 function App() {
   return (
