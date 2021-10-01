@@ -1,4 +1,4 @@
-import { useState, useEffect, React } from "react";
+import { useState, useEffect } from "react";
 import "../styles/Repositories.css";
 import { RepositoriesItems } from "./RepositoriesItems";
 
@@ -16,7 +16,7 @@ export const RopositoriesList = () => {
       <ul>
         {/* listing API dates and rendering*/}
         {itens.map((index) => {
-          return <RepositoriesItems index={index} />;
+          return <RepositoriesItems  index={index} />;
         })}
       </ul>
     </section>
